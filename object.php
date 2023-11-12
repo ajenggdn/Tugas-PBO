@@ -4,12 +4,13 @@
 require_once "data/person.php";
 
 // buat object baru dari kelas person
-$person = new Person("alzah","bengkulu");
+$person = new Person("DiAjeng","Lubuk Linggau");
+// ini merupakan sebuah objek dengan data nama dan alamat yang mana belum terdapat data yang menyebutkan negara 
 
 // manipulasi properti nama, alamat, negara
-$person->nama = "alzah";
-$person->alamat = "bengkulu";
-$person->negara = "Arab";
+$person->nama = "DiAjeng";
+$person->alamat = "Lubuk Lingau";
+$person->negara = "Jepang";
 
 // menampilkan hasil
 echo "nama = {$person->nama}" . PHP_EOL;

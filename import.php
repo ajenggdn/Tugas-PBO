@@ -1,14 +1,17 @@
 <?php
 
-require_once "data/Conflict.php";
-require_once "data/Helper.php";
+require_once "data/conflict.php";
+require_once "data/helper.php";
 
 use Data\One\Conflict;
 use function Helper\helpMe;
 use const Helper\APPLICATION;
 
-$conflict1 = new Conflict();
-$conflict2 = new Data\Two\Conflict();
+$conflict = new Conflict("Ini adalah pesan konflik satu.\n");
+echo $conflict->getMessage();
+
+$conflict = new Conflict("Ini adalah pesan konflik dua.\n");
+echo $conflict->getMessage();
 
 helpMe();
 

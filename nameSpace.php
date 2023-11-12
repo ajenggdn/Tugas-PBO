@@ -1,9 +1,17 @@
 <?php
 
+// import data dari conflict*
 // buat namespace
-// import data dari conflict
-// buat obeject dari namespace yang di buat
-
+// buat object dari namespace yang di buat
 // import data helper
+require_once "data/conflict.php";
+require_once "data/helper.php";
+
+use Kodok\Conflict;
+use function Helper\helpMe as help;
+
 // tampilkan helper menggunakan echo
 // masukan Helper\helpMe();
+
+echo help();
+?>
